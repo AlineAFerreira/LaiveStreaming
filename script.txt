@@ -1,0 +1,26 @@
+INSERT INTO `tb_filmes` (`id`, `nome`, `genero`, `rate`, `capa`, `descricao`, `classificacao`, `duracao`, `trailer`, `valor`, `banner`) VALUES (
+NULL, 
+'cidades de papel', 
+'Romance, Drama', 
+'4.0', 
+'cidades.jpg', 
+'A história é centrada em Quentin Jacobsen (Nat Wolff) e sua enigmática vizinha e colega de escola Margo Roth Spiegelman (Cara Delevingne). Ele nutre uma paixão platônica por ela. E não pensa duas vezes quando a menina invade seu quarto propondo que ele participe de um engenhoso plano de vingança. Mas, depois da noite de aventura, Margo desaparece – não sem deixar pistas sobre o seu paradeiro.', 
+'12', 
+'2109', 
+'https://www.youtube.com/watch?v=64Zj403pfeY', 
+'14.99',
+''
+);
+
+
+SELECT filmes.* 
+FROM tb_vitrines vit 
+INNER JOIN tb_itens_vitrine itens 
+on vit.id = itens.id_vitrine 
+LEFT JOIN tb_filmes filmes 
+on filmes.id = itens.id_filme 
+WHERE vit.status = 1 and itens.status = 1
+
+1,3,4,5,6,9
+
+10,11,12,13,14,15

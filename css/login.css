@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../img/footer_lodyas.png');
+}
+
+h1{
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.main {
+	margin-top: 30px;
+}
+
+@media (max-width: 991px){
+	.main{
+		margin-top: 50px;
+	}
+}
+
+.circle {
+	display: block;
+	width: 50px;
+	height: 50px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	margin: 0 auto;
+	font-size: 25px;
+	line-height: 47px;
+	font-weight: 600;
+	border: 3px solid white;
+	color: #FFFFFF;
+}
+.circle.active{
+	background: white;
+	color: #222;
+}
+.step_name{
+	display: block;
+	margin: 15px 0;
+	color: #FFFFFF;
+}
+
+.form-container {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 35px;
+	background-color: white;
+}
+
+.form-container small{
+	text-transform: uppercase;
+	color: #666666;
+	display: block;
+}
+
+input[type=submit],
+input[type=button]{
+	background-color: #68A228;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 6px 8px;
+}
+
+#step-2,
+#step-3,
+#step-4 {
+	display: none;
+}
